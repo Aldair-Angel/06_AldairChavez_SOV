@@ -1,0 +1,25 @@
+-- Iniciar la instalacion mysql
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt mysql-server
+
+-- Contraseña para el root del su
+sudo su 
+
+-- Seguridad de mysql 
+sudo mysql_secure_installation
+
+-- Acceso a mysql
+sudo mysql -u root
+    -- dentro colocamos la Contraseña 
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '12345678';
+    flush privileges;
+
+-- Acceso a la Contraseña 
+sudo mysql -u root -p
+
+-- Creamos un nuevo usuario en el MYSQL
+create user 'achavez'@'localhost' IDENTIFIED WITH mysql_native_password 'contraseña'
+
+-- Otorgarmos privilegios al nuevo usuario
+GRANT ALL PRIVILEGES ON * . * TO 'achavez'@'localhost';
