@@ -1,0 +1,17 @@
+2023-11-07 20:28:45.011 [info] 
+
+
+
+
+2023-11-07 20:28:45.011 [info] Extension host agent started.
+2023-11-07 20:28:45.013 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
+2023-11-07 20:28:45.121 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.vscode-server/extensions
+2023-11-07 20:28:45.606 [info] [127.0.0.1][fa07f174][ManagementConnection] New connection established.
+2023-11-07 20:28:45.690 [info] [127.0.0.1][5cf57fd7][ExtensionHostConnection] New connection established.
+2023-11-07 20:28:46.025 [info] [127.0.0.1][5cf57fd7][ExtensionHostConnection] <1419> Launched Extension Host Process.
+2023-11-07 20:33:45.270 [info] New EH opened, aborting shutdown
+2023-11-07 21:04:48.885 [warning] No ptyHost heartbeat after 6 seconds
+2023-11-07 21:05:32.480 [warning] No ptyHost heartbeat after 6 seconds
+2023-11-07 21:06:29.847 [warning] No ptyHost heartbeat after 6 seconds
+2023-11-07 21:07:37.751 [warning] No ptyHost heartbeat after 6 seconds
+2023-11-07 21:07:52.735 [warning] No ptyHost heartbeat after 6 seconds
