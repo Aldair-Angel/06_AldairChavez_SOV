@@ -25,14 +25,14 @@ console.log(result);
 })
 
 //Insertar datos a mysql
- conexion.query('INSERT INTO actor (first_name , last_name)VALUES("Juan","Apasa")',function (error,results){
+/* conexion.query('INSERT INTO actor (first_name , last_name)VALUES("Juan","Apasa")',function (error,results){
   if(error) throw error;
       console.log("Registro Agregado",results)  
-});
+});*/
 
 //actuaizar los datos
-/*conexion.query('UPDATE usuarios SET first_name = "Steve", last_name="Rogers" WHERE actor_id=199' , function(error, result){
+conexion.query('UPDATE usuarios SET first_name = "Steve", last_name="Rogers" WHERE actor_id=199' , function(error, result){
 if(error) thron error;
 console.log('!Registro actualisado¡, result);
-});*/	
+});	
 conexion.end();
