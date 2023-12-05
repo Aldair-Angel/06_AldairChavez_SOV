@@ -24,7 +24,7 @@ let conexion = mysql.createConnection({
     host : 'localhost',
     database : 'dbformulario',
     user : 'root',
-    password : 'admin',
+    password : '',
 })
 
 conexion.connect((err) => {
@@ -45,7 +45,7 @@ app.post("/validar", (req, res) => {
     const nacimiento = data.nacimiento;
     const contraseña = data.contraseña;
 
-    const registrar = "INSERT INTO Formulario (carrera, nombres, apellidos, dni, feha_nacimiento, correo_intitucional, clave) VALUES ('" +carrera+ "', '"+nombre+"', '"+apellido+"', '"+dni+"', '"+email+"', '"+nacimiento+"', '"+contraseña+"' )"
+    const registrar = "INSERT INTO Formulario (carrera, nombres, apellidos, dni, fecha_nacimiento, correo_institucional, clave) VALUES ('" +carrera+ "', '"+nombre+"', '"+apellido+"', '"+dni+"', '"+email+"', '"+nacimiento+"', '"+contraseña+"' )"
     conexion.query(registrar,function(error) {
         if (error) {
             console.log("ocurrio un error")
