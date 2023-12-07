@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
     res.sendFile(conect)
 })
 
+app.get('/login.html', (req, res) => {
+    const conect = path.join(__dirname +'/public/login.html')
+    res.sendFile(conect)
+})
+
 app.use("/css", express.static(__dirname + '/public/css'));
 
 app.use(express.json());
@@ -51,6 +56,7 @@ app.post("/validar", (req, res) => {
             console.log("ocurrio un error")
         } else {
             console.log("datos guardados")
+            res.redirect('/login.html')
         }
     })
 })

@@ -13,31 +13,22 @@
             <h1>Registrarme</h1>
             <p>Nombre de la carrera</p>
             <div class="formulario_container">
-
-                <input id="carrera" type="text" name="carrera" placeholder="carrera" />
-
-                <!-- <label class="botom_carreras">
-                    <input id="carrera" type="radio" name="carrera" required> Analizis de sistemas 
-                </label>
-                <label class="botom_carreras">
-                    <input id="carrera" type="radio" name="carrera" required> Carrera de Agraria 
-                </label> -->
-
+                <input id="carrera" type="text" name="carrera" placeholder="carrera" pattern="[a-z]{1,30}"/>
             </div class="formulario_container">
 
             <p class="texto_formulario">Nombres del usuario</p>
             <div class="formulario_container">
-                <input id="nombre" type="text" name="nombre" placeholder="nombres" />
+                <input id="nombre" type="text" name="nombre" placeholder="nombres" pattern="[a-z]{1,30}"/>
             </div>
 
             <p class="texto_formulario">Apellidos del usuario</p>
             <div class="formulario_container">
-                <input id="apellidos" type="text" name="apellidos" placeholder="apellidos" />
+                <input id="apellidos" type="text" name="apellidos" placeholder="apellidos" pattern="[a-z]{1,30}"/>
             </div>
 
             <p class="texto_formulario">DNI del usuario</p>
             <div class="formulario_container">
-                <input id="dni" type="number" name="dni" placeholder="dni" />
+                <input id="dni" type="number" name="dni" placeholder="dni" pattern="[0-9]{8}" />
             </div>
 
             <p class="texto_formulario">Email del usuario</p>
@@ -57,9 +48,13 @@
 
             <div class="formulario_container">
                 <input type="submit" name="Inscríbeme" value="Inscríbeme" />
-            </div>
+            </div> 
             </form>
+            <div class="boton_css">
+                <button class="boton_css" id="toggleButton" onclick="togglePassword()">Mostrar/Ocultar</button>
+            </div>
         </div>
     </section>
+    <script src="js/scrypt.js"></script>
 </body>
 </html>
